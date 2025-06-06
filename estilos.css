@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/* Header */
+header {
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    height: 93px;
+    justify-content: space-between;
+    aspect-ratio: 1400/93;
+}
+
+.logo {
+    width: 140px;
+    height: 93px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: "Sofia Sans Extra Condensed";
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Main - Index */
+.main_index {
+    height: 1000px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    line-height: 0.9;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+}
+
+h1 {
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 150px;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 320px;
+}
+
+.foto {
+    position: absolute;
+    top: 310px;
+}
+
+.estrellalila {
+    position: absolute;
+    margin-left: 310px;
+    top: 70px;
+    animation: rotar 10s linear infinite;
+}
+
+.estrellaroja {
+    position: absolute;
+    margin-left: -450px;
+    top: 300px;
+    animation: rotar 10s linear infinite;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Footer */
+.contacto {
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    gap: 150px;
+    background: #635795;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+p {
+    color: #FFF;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.derechos {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background: #C30606;
+}
+
+/* Main - Contacto */
+.main_contacto {
+    height: auto;
+}
+
+.contenedor_formulario {
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 100px;
+}
+
+.pregunta_formulario {
+    flex: 1;
+    max-width: 40%;
+    z-index: 10;
+}
+
+.formulario {
+    flex: 1;
+    max-width: 60%;
+}
+
+.zona-formulario {
+    background-color: #F5ECE3;
+    padding: 25px 50px 50px 50px;
+    z-index: 30;
+}
+
+.items-formulario {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #A79ADD;
+    padding: 50px 60px 30px 60px;
+    box-sizing: border-box;
+    border-radius: 80px;
+}
+
+label {
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+.columna-izq-form, .columna-der-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    margin: 5px 0 30px 0;
+    background-color: white;
+    width: 260px;
+    border-radius: 25px;
+}
+
+textarea {
+    padding: 10px 0 50px 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.mensaje-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit {
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    background-color: #CC0000;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 5px 25px 6px 25px;
+    width: 18%;
+}
+
+.titulo_form {
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 70px;
+    font-weight: 700;
+    color: black;
+    padding: 100px 20px 50px 100px;
+    margin-right: 20px;
+    max-width: 60%;
+}
