@@ -28,46 +28,43 @@
         <main class="main_contacto">
             
             <section class="contenedor_formulario">
+    <div class="pregunta_formulario">
+        <h2 class="titulo_form">¿Tenés algún proyecto en mente o consulta?</h2>
+    </div>
 
-                <div class="pregunta_formulario">
-                    <h2 class="titulo_form"> ¿Tenés algún proyecto en mente o consulta?</h2>
+    <div class="formulario">
+      
+        <form method="POST" action="https://formsubmit.co/duartevalentina895@gmail.com" target="_blank">
+            
+            <div class="items-formulario">
+                <div class="columna-izq-form">
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Escribí tu apellido completo" required>
+
+                    <label for="email">CORREO ELECTRÓNICO</label>
+                    <input type="email" name="email" id="email" maxlength="50" placeholder="Escribí un correo electrónico" required>
                 </div>
 
+                <div class="columna-der-form">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Escribí tu nombre completo" required>
 
-
-                <div class="formulario">
-                    <form method="post" action="mail:duartevalentina895@gmail.com='Email enviado desde el formulario'" target="_blank" enctype="text/plain">
-					
-                        <div class="items-formulario">
-						   <div class="columna-izq-form">
-							<label for="apellido_nombre">APELLIDO</label>
-							<input type="text" name="apellido_nombre" id="apellido" maxlenght="50" placeholder="Escribí tu apellido completo" required="">
-							<label for="email">CORREO ELECTRÓNICO</label>
-							<input type="email" name="email" id="email" maxlenght="50" placeholder="Escribí un correo electrónico" required="">
-						   </div>
-
-						   <div class="columna-der-form">
-							<label for="proyecto_empresa">NOMBRE</label>
-							<input type="text" name="nombre" id="nombre" maxlenght="30" placeholder="Escribí tu nombre completo" required="">
-							<label for="telefono">TELÉFONO</label>
-							<input type="tel" name="telefono" id="telefono" placeholder="(011) ____ ____">
-						   </div>
-					    </div>
-
-						<div class="mensaje-form">
-							<label for="mensaje">MENSAJE</label>
-							<textarea name="mensaje" id="mensaje">Escribí las dudas o consultas</textarea>
-						</div>
-
-						<div class="boton-enviar">
-							<input type="submit" class="submit">
-						</div>
-				</form>
-
+                    <label for="telefono">TELÉFONO</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="(011) ____ ____">
                 </div>
+            </div>
 
-            </section>
+            <div class="mensaje-form">
+                <label for="mensaje">MENSAJE</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribí las dudas o consultas" required></textarea>
+            </div>
 
+            <div class="boton-enviar">
+                <input type="submit" class="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</section>
 
         </main>
 
