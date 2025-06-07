@@ -1,11 +1,16 @@
 @charset "utf-8";
 
+body {
+  cursor: url('img/estrella_cursor_24x24.svg') 10 10, auto;
+}
+
 /* Header */
 header {
     display: flex;
-    height: 130px;
+    height: 15px;
     justify-content: center;
     align-items: center;
+    margin: 80px;
 }
 
 .contenedor {
@@ -18,6 +23,19 @@ header {
 .logo {
     width: 140px;
     height: 93px;
+}
+
+header nav a {
+  color: black; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+header nav a:hover {
+  color: white; 
+  background: #C30606; 
+  padding: 15px;
+  border-radius: 20px;
 }
 
 nav {
@@ -44,22 +62,16 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
     position: relative;
 }
 
+
 .nombre {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
     line-height: 0.9;
 }
 
 h1, h2 {
     margin: 0;
-    padding: 0;
-    line-height: 0.9;
 }
 
 h1 {
@@ -131,27 +143,16 @@ p {
     background: #C30606;
 }
 
-/* Main - Contacto */
+/* Contacto */
 
 .contenedor_formulario {
     display: flex;
-    flex-direction: row;
     column-gap: 60px;
-    justify-content: center;
-    align-items: flex-start;
     padding: 50px 100px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.pregunta_formulario {
-    flex: 1;
-    max-width: 40%;
-    z-index: 10;
-}
-
-.formulario {
-    flex: 1;
-    max-width: 60%;
-}
 
 .zona-formulario {
     background-color: #F5ECE3;
@@ -161,40 +162,29 @@ p {
 
 .items-formulario {
     display: flex;
-    flex-direction: row;
     column-gap: 50px;
-    justify-content: space-between;
 }
 
 form {
-    display: flex;
     flex-direction: column;
     background-color: #A79ADD;
     padding: 50px 60px 30px 60px;
-    box-sizing: border-box;
     border-radius: 80px;
 }
 
 label {
     font-family: "Sofia Sans Extra Condensed";
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 26px;
     color: white;
 }
 
-.columna-izq-form, .columna-der-form {
-    display: flex;
-    flex-direction: column;
-}
 
 input {
     padding: 10px;
     font-family: "Sofia Sans Extra Condensed";
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 20px;
     border: none;
     margin: 5px 0 30px 0;
-    background-color: white;
     width: 260px;
     border-radius: 25px;
 }
@@ -204,11 +194,9 @@ textarea {
     margin: 5px 0 20px 0;
     border: none;
     font-family: "Sofia Sans Extra Condensed";
-    font-size: 14px;
-    font-weight: 400;
-    color: #808080;
-    background-color: white;
+    font-size: 20px;
     border-radius: 25px;
+
 }
 
 .mensaje-form {
@@ -222,27 +210,16 @@ textarea {
 }
 
 .submit {
-    font-family: "Sofia Sans Extra Condensed";
     font-size: 22px;
-    font-weight: 400;
     color: white;
     background-color: #CC0000;
-    display: flex;
     justify-content: center;
-    cursor: pointer;
-    border: none;
-    padding: 5px 25px 6px 25px;
     width: 18%;
 }
 
 .titulo_form {
-    font-family: "Sofia Sans Extra Condensed";
     font-size: 70px;
-    font-weight: 700;
-    color: black;
-    padding: 100px 20px 50px 100px;
-    margin-right: 20px;
-    max-width: 60%;
+    padding: 50px;
 }
 
 /*curriculum*/
@@ -270,11 +247,10 @@ textarea {
 .titulos {
     font-size: 30px;
     color: white;
-    margin: 40px 0 10px;
-    font-family: "Belleza", sans-serif;
+    margin: 100px 0 10px;
     padding-top: 20px;
-    margin-top: 0; 
-    border-bottom: 1px #635795 solid;
+    margin-top: 0;
+
 }
 
 .caja ul li {
@@ -282,12 +258,13 @@ textarea {
 }
 
 ul {
-    font-family: "Montserrat", sans-serif;
+    font-family: Roboto;
     list-style: none;
-    padding-left: 0;
+    padding-left: 30px;
     margin: 5px 0 20px;
     color: white;
 }
+
 
 ul ul {
     padding-left: 20px;
@@ -305,15 +282,12 @@ ul ul {
 /* COLUMNA DERECHA */
 .derecha {
     width: 30%;
-    display: flex;
-    flex-direction: column;
 }
 
 .otros {
-    font-family: "Montserrat", sans-serif;
     color: white;
     margin-top: 20px;
-    background-color: #A79ADD;
+    background: black;
     border-radius: 50px;
     padding: 30px;
     padding-top: 55px;
@@ -326,38 +300,38 @@ ul ul {
 .otros h3 {
     font-size: 25px;
     margin: -20px 0 22px;
-    font-family: "Belleza", sans-serif;
+    font-family: "Sofia Sans Extra Condensed";
     padding-top: 20px;
 }
 
+.otros p {
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+}
+
 /*sobre mi*/
+
 .seccion-sobremi {
     display: flex;
-    flex: row;
-    width: 1324px;
-    height: 769px;
     align-items: center;
-    flex-shrink: 0;
     justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
 
 .texto-sobremi h2 {
-    font-family: "Sofia Sans Extra Condensed";
     font-size: 205px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    margin-left: 40px;
 }
 
 .texto-sobremi p {
     width: 474px;
-    height: 322px;
     color: #000;
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    margin-left: 40px;
 }
 
 /*trabajos html*/
@@ -369,19 +343,15 @@ ul ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 60px;
 }
 
 .trabajos h1 {
     color: #FFF;
-    font-family: "Sofia Sans Extra Condensed";
     font-size: 110px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin-top: 140px;
-    margin-right: 360px;
+    margin-right: 470px;
 }
 
 .cont_trabajo {
@@ -391,22 +361,34 @@ ul ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     flex-shrink: 0;
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
     border-radius: 40px;
     background: #FFF;
 }
 
-h3 {
-    color: #000;
-    text-align: center;
+.cont_trabajo a {
     font-family: "Sofia Sans Extra Condensed";
     font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+}
+
+.cont_trabajo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cont_trabajo:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px white(0, 0, 0, 0.2);
+  background-color: #A79ADD;
+}
+
+.cont_trabajo:hover a {
+  color: white; 
+  text-decoration: underline;
+  background: #CC0000;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 20px;
 }
 
 .cuerpo {
@@ -415,20 +397,16 @@ h3 {
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal; 
 }
 
 .arriba {
     display: flex;
-    align-items: center;
     gap: 61px;
 }
 
 .a_bajo {
     display: flex;
-    align-items: center;
     gap: 61px;
     margin-bottom: 140px;
 }
