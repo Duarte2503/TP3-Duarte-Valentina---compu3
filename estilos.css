@@ -8,13 +8,6 @@ header {
     align-items: center;
 }
 
-.header_otros {
-  display: flex;
-  height: 130px;
-  justify-content: center;
-  align-items: center;
-}
-
 .contenedor {
     display: flex;
     height: 93px;
@@ -252,149 +245,125 @@ textarea {
     max-width: 60%;
 }
 
-
-
-
-
 /*curriculum*/
 
- /*COLUMNA IZQUIERDA */
-
 .main_cv {
-  display: flex;
-   max-width: 1200px;
-  margin: 0 auto; 
-  padding: 20px;
-  box-sizing: border-box;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
 }
   
 .izquierda {
-  width: 70%;
+    width: 70%;
 }
 
 .caja {
-   background: #635795;
-  border-radius: 50px;
-  padding: 25px;
-  margin: 20px;
-  padding-left: 30px;
+    background: #635795;
+    border-radius: 50px;
+    padding: 25px;
+    margin: 20px;
+    padding-left: 30px;
 }
 
 .titulos {
-  font-size: 30px;
-  color: white;
-  margin: 40px 0 10px;
-  font-family: "Belleza", sans-serif;
-  padding-top: 20px;
-  margin-top: 0; 
-  border-bottom: 1px #635795 solid;
+    font-size: 30px;
+    color: white;
+    margin: 40px 0 10px;
+    font-family: "Belleza", sans-serif;
+    padding-top: 20px;
+    margin-top: 0; 
+    border-bottom: 1px #635795 solid;
 }
 
 .caja ul li {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
-
 ul {
-  font-family: "Montserrat", sans-serif;
-  list-style: none;
-  padding-left: 0;
-  margin: 5px 0 20px;
-  color: white;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    padding-left: 0;
+    margin: 5px 0 20px;
+    color: white;
 }
 
 ul ul {
-  padding-left: 20px;
-  font-size: 17px;
-  color: white;
-  margin-top: 5px;
+    padding-left: 20px;
+    font-size: 17px;
+    color: white;
+    margin-top: 5px;
 }
 
 .temas {
-  font-size: 19px;
-  color: white;
-  font-weight: bold;
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
 }
 
 /* COLUMNA DERECHA */
 .derecha {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .otros {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  margin-top: 20px;
-  background-color: #A79ADD;
-  border-radius: 50px;
-  padding: 30px;
-  padding-top: 55px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin-top: 20px;
+    background-color: #A79ADD;
+    border-radius: 50px;
+    padding: 30px;
+    padding-top: 55px;
 }    
 
 .otros li {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .otros h3 {
-  font-size: 25px;
-  margin: -20px 0 22px;
-  font-family: "Belleza", sans-serif;
-  padding-top: 20px;
+    font-size: 25px;
+    margin: -20px 0 22px;
+    font-family: "Belleza", sans-serif;
+    padding-top: 20px;
 }
-
 
 /*sobre mi*/
 .seccion-sobremi {
-display: flex;
-flex: row;
-width: 1324px;
-height: 769px;
-align-items: center;
-flex-shrink: 0;
-justify-content: center;
-}
-
-.foto-marco {
-display: flex;
-align-items: center;
-gap: 10px;
-width: 691px;
-height: 769px;
-aspect-ratio: 691/769;
-margin-right: 40px;
+    display: flex;
+    flex: row;
+    width: 1324px;
+    height: 769px;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
 }
 
 .texto-sobremi h2 {
-font-family: "Sofia Sans Extra Condensed";
-font-size: 205px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 205px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .texto-sobremi p {
     width: 474px;
-height: 322px;
-
-color: #000;
-
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    height: 322px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-
-
 /*trabajos html*/
-
 .main_trabajo {
     background-color: #000;
 }
-
 
 .trabajos {
     display: flex;
@@ -405,68 +374,62 @@ line-height: normal;
 }
 
 .trabajos h1 {
-color: #FFF;
-font-family: "Sofia Sans Extra Condensed";
-font-size: 110px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-top: 140px;
-margin-right: 360px;
+    color: #FFF;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 140px;
+    margin-right: 360px;
 }
 
 .cont_trabajo {
-display: flex;
-width: 377px;
-height: 360px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-grid-row: 2 / span 1;
-grid-column: 2 / span 1;
-border-radius: 40px;
-background: #FFF;
-
+    display: flex;
+    width: 377px;
+    height: 360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    border-radius: 40px;
+    background: #FFF;
 }
-
 
 h3 {
     color: #000;
-
-text-align: center;
-/* h3 */
-font-family: "Sofia Sans Extra Condensed";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    text-align: center;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .cuerpo {
-   width: 277px;
-color: #000;
-text-align: center;
-/* cuerpo 2 */
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
+    width: 277px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
 }
 
 .arriba {
-display: flex;
-align-items: center;
-gap: 61px;
+    display: flex;
+    align-items: center;
+    gap: 61px;
 }
 
 .a_bajo {
     display: flex;
-align-items: center;
-gap: 61px;
-margin-bottom: 140px;
+    align-items: center;
+    gap: 61px;
+    margin-bottom: 140px;
 }
-
 
