@@ -67,7 +67,7 @@ a {
 
 
 .nombre {
-    line-height: 0.9;
+    line-height: 0.8;
 }
 
 h1, h2 {
@@ -120,6 +120,7 @@ h2 {
     justify-content: center;
     gap: 150px;
     background: #635795;
+    margin-top: 50px;
 }
 
 .item {
@@ -227,102 +228,117 @@ textarea {
 .main_cv {
     display: flex;
     max-width: 1200px;
-    margin: 0 auto; 
-    padding: 20px;
-    box-sizing: border-box;
+    margin: 0 auto;
+    gap: 40px;
 }
-  
+
 .izquierda {
     width: 70%;
+}
+
+.derecha {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .caja {
     background: #635795;
     border-radius: 50px;
-    padding: 25px;
-    margin: 20px;
-    padding-left: 30px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
 }
 
 .titulos {
     font-size: 30px;
     color: white;
-    margin: 100px 0 10px;
-    padding-top: 20px;
-    margin-top: 0;
+    margin-bottom: 10px;
+}
 
+.caja ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: Roboto;
+    color: white;
 }
 
 .caja ul li {
     margin-bottom: 12px;
 }
 
-ul {
-    font-family: Roboto;
-    list-style: none;
-    padding-left: 30px;
-    margin: 5px 0 20px;
-    color: white;
-}
-
-
-ul ul {
-    padding-left: 20px;
-    font-size: 17px;
-    color: white;
-    margin-top: 5px;
-}
-
 .temas {
-    font-size: 19px;
-    color: white;
     font-weight: bold;
-}
-
-/* COLUMNA DERECHA */
-.derecha {
-    width: 30%;
+    color: white;
+    font-size: 19px;
 }
 
 .otros {
+    background-color: black;
     color: white;
-    margin-top: 20px;
-    background: black;
     border-radius: 50px;
     padding: 30px;
-    padding-top: 55px;
-}    
-
-.otros li {
-    margin-bottom: 12px;
 }
 
 .otros h3 {
     font-size: 25px;
-    margin: -20px 0 22px;
     font-family: "Sofia Sans Extra Condensed";
-    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+.otros ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: Roboto;
+    font-size: 18px;
 }
 
 .otros p {
+    color: #FFF;
     font-family: Roboto;
-    color: white;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: normal;
 }
-
 /*sobre mi*/
 
 .seccion-sobremi {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     margin-top: 130px;
     margin-bottom: 130px;
 }
 
+ .foto_sobremi {
+    width: 591px;
+    height: 669px;
+}
+
+.estrella_3 {
+    position: absolute;
+    top: 830px;
+}
+
+.estrella_4 {
+    transform: rotate(11.784deg);
+    position: absolute;
+    left: 230px;
+    top: 140px;
+}   
+
+.estrella_2 {
+    height: 54px;
+    position: absolute;
+    right: 337px;
+    top: 300px;
+    animation: rotar 10s linear infinite;
+}
+
+
 .texto-sobremi h2 {
     font-size: 205px;
     margin-left: 40px;
+    line-height: 0.8;
 }
 
 .texto-sobremi p {
@@ -334,9 +350,17 @@ ul ul {
     margin-left: 40px;
 }
 
-/*trabajos html*/
+/*trabajos*/
 .main_trabajo {
     background-color: #000;
+}
+
+.estrella_trab {
+    animation: rotar 10s linear infinite;
+    position: absolute;
+    LEFT: 260PX;
+    top: 320Px;
+    height: 60PX;
 }
 
 .trabajos {
@@ -411,3 +435,53 @@ ul ul {
     margin-bottom: 140px;
 }
 
+/*teatro cervantes*/
+.teatro_cervantes {
+    display: flex;
+    width: 1439.617px;
+    gap: 16px 4px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.texto_tc h1 {
+    font-size: 110px;
+    font-weight: 700;
+    max-width: 1400px;
+    margin-bottom: 50px;
+    margin: auto;
+}
+
+.afiches_tc {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; 
+}
+
+.columna_1tc,
+.columna_2tc,
+.columna_3tc {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+}
+
+.teatro_cervantes > section {
+  margin-right: 40px;
+}
+
+.folleto {
+    margin-bottom: 40px;
+}
+
+.descripcion_tc p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.descripcion_tc h3 {
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 32px;
+}
