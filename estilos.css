@@ -573,11 +573,11 @@ textarea {
 
 .main_otrostp h1 {
     color: #FFF;
-font-family: "Sofia Sans Extra Condensed";
-font-size: 110px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+   line-height: normal;
 }
 
 .cont_otrostp {
@@ -677,7 +677,7 @@ line-height: normal;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* <<<<< Cambiá esto */
+    gap: 10px; 
     padding: 10px;
     height: auto;
     width: 100%;
