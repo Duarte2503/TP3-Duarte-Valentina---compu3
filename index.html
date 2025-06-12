@@ -17,7 +17,10 @@
 
          <header>
           <div class="contenedor">
-              <img src="img/logo_portfolio.svg" alt="Logo" class="logo">
+              <img src="img/logo_portfolio.svg" alt="Logo" class="logo"> 
+              <div>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
+              </div>
               <nav>
                <a href="index.html">BIENVENIDOS</a>
                <a href="sobremi.html">SOBRE MÍ</a>
@@ -25,7 +28,9 @@
                <a href="contacto.html">CONTACTO</a>
                <a href="curriculum.html">CURRICULUM</a>
               </nav>
-          </div>   
+              
+          </div>  
+         
         </header>
 
         <main>
@@ -68,6 +73,13 @@
           </div>
 
         </footer>
+
+        <script>
+            function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+         }
+</script>
     </body>
 
 </html>

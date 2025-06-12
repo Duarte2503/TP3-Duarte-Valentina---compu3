@@ -14,7 +14,7 @@ main {
   flex: 1;
 }
 
-/* Header */
+/* ------------------------------------------------------------------Header--------------------------------------------------------------------- */
 header {
   display: flex;
   height: 15px;
@@ -64,7 +64,7 @@ a {
   font-weight: 700;
 }
 
-/*Index */
+/*----------------------------------------------------------------------------Index---------------------------------------------------------------------- */
 
 .cont {
   display: flex;
@@ -90,6 +90,9 @@ h1 {
 h2 {
   font-family: "Sofia Sans Extra Condensed";
   font-size: 320px;
+}
+.img_index {
+  margin-bottom: 0;
 }
 
 .foto {
@@ -119,7 +122,10 @@ h2 {
   }
 }
 
-/* Footer */
+/*----------------------------------------------------- Footer----------------------------------------------------------------------- */
+footer {
+  margin-top: 0;
+}
 .contacto {
   display: flex;
   height: 180px;
@@ -149,7 +155,7 @@ p {
   background: #C30606;
 }
 
-/* Contacto */
+/* -------------------------------------------------------------------------------Contacto------------------------------------------------------------ */
 
 .contenedor_formulario {
     display: flex;
@@ -238,7 +244,7 @@ textarea {
     padding: 50px;
 }
 
-/*curriculum*/
+/*-----------------------------------------------------------------------------------------curriculum-----------------------------------------------------------------------*/
 
 .main_cv {
     display: flex;
@@ -321,7 +327,7 @@ textarea {
     font-size: 22px;
     font-weight: normal;
 }
-/*sobre mi*/
+/*---------------------------------------------------------------------------sobre mi--------------------------------------------------------------*/
 
 .seccion-sobremi {
     display: flex;
@@ -378,7 +384,7 @@ textarea {
     margin-left: 40px;
 }
 
-/*trabajos*/
+/*-------------------------------------------------------------------------------------------trabajos----------------------------------------------------------------------*/
 .main_trabajo {
     background-color: #000;
 }
@@ -462,7 +468,7 @@ textarea {
 
 
 
-/*teatro cervantes*/
+/*-----------------------------------------------------------------teatro cervantes-------------------------------------------------*/
 .main_teatro_cervantes{
     background: #000;
 }
@@ -521,9 +527,7 @@ textarea {
     color: white;
 }
 
-/*landscape*/
-
-
+/*------------------------------------------------------------------------landscape-----------------------------------------------------------------*/
 
 .main_landscape {
     background: #000;
@@ -582,7 +586,7 @@ textarea {
     margin-left: 355px;
 }
 
-/*OTROS TP*/
+/*---------------------------------------------------------------OTROS TP-----------------------------------------------------------------------------*/
 
 .main_otrostp {
     background: black;  
@@ -624,7 +628,7 @@ textarea {
 }
 
 
-/*pinturas*/
+/*-----------------------------------------------------------------------------------pinturas------------------------------------------------------------*/
 
 .botón_volver {
     position: relative;
@@ -669,6 +673,10 @@ textarea {
 }
 
 
+.menu-toggle {
+  display: none;
+}
+
 
 @media screen and (max-width: 412px) {
 
@@ -677,30 +685,48 @@ textarea {
   html, body {
     overflow-x: hidden;
     max-width: 100%;
-  }
-
-   header {
+  } 
+  
+  header {
     height: unset;
     margin: 50px;
     padding: unset;
   }
-
+  
   .logo {
     width: 68px;
     height: 56px;
   }
 
-  .contenedor {
-    flex-direction: column;
-    gap: 5px;
-    gap: unset;
+   .contenedor {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 250px;
+    position: relative;
   }
 
-  nav {
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-    height: unset;
+  .menu-toggle {
+    display: block;
+    font-size: 40px;
+    color: black; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+  }
+
+    nav {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: white;
+        width: 100%;
+        margin-left: 150px;
+        gap: 30px;
+    }
+
+  nav.active {
+    display: flex !important; 
   }
 
   a {
