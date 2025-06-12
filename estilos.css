@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-
 body {
   cursor: url('img/estrella_cursor_24x24.svg') 10 10, auto;
 }
@@ -16,145 +15,138 @@ main {
 }
 
 /* Header */
-
 header {
-    display: flex;
-    height: 15px;
-    justify-content: center;
-    align-items: center;
-    margin: 80px;
-    padding: 15px;
+  display: flex;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  padding: 15px;
 }
 
 .contenedor {
-    display: flex;
-    height: 93px;
-    justify-content: space-between;
-    gap: 600px;
+  display: flex;
+  height: 93px;
+  justify-content: space-between;
+  gap: 600px;
 }
 
 .logo {
-    width: 140px;
-    height: 93px;
+  width: 140px;
+  height: 93px;
 }
 
 header nav a {
-  color: black; 
-  text-decoration: none; 
-  transition: color 0.3s ease; 
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 header nav a:hover {
-  color: white; 
-  background: #C30606; 
+  color: white;
+  background: #C30606;
   padding: 15px;
   border-radius: 20px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    font-family: "Sofia Sans Extra Condensed";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: "Sofia Sans Extra Condensed";
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: 700;
+  color: black;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 /*Index */
-.main_index {
-    height: 1000px;
-}
 
 .cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-
 .nombre {
-    line-height: 0.8;
+  line-height: 0.8;
 }
 
 h1, h2 {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    font-family: "Sofia Sans Extra Condensed";
-    font-size: 150px;
-    font-weight: 300;
+  font-family: "Sofia Sans Extra Condensed";
+  font-size: 150px;
+  font-weight: 300;
 }
 
 h2 {
-    font-family: "Sofia Sans Extra Condensed";
-    font-size: 320px;
+  font-family: "Sofia Sans Extra Condensed";
+  font-size: 320px;
 }
 
 .foto {
-    position: absolute;
-    top: 310px;
+  top: 310px;
 }
 
 .estrellalila {
-    position: absolute;
-    margin-left: 310px;
-    top: 70px;
-    animation: rotar 10s linear infinite;
+  position: absolute;
+  margin-left: 10px;
+  top: 50px;
+  animation: rotar 10s linear infinite;
 }
 
 .estrellaroja {
-    position: absolute;
-    margin-left: -450px;
-    top: 300px;
-    animation: rotar 10s linear infinite;
+  position: absolute;
+  margin-left: -720px;
+  top: 300px;
+  animation: rotar 10s linear infinite;
 }
 
 @keyframes rotar {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Footer */
 .contacto {
-    display: flex;
-    height: 180px;
-    justify-content: center;
-    gap: 150px;
-    background: #635795;
+  display: flex;
+  height: 180px;
+  justify-content: center;
+  gap: 150px;
+  background: #635795;
 }
 
-
 .item {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 p {
-    color: #FFF;
-    font-family: "Sofia Sans Extra Condensed";
-    font-size: 26px;
-    font-weight: 700;
+  color: #FFF;
+  font-family: "Sofia Sans Extra Condensed";
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .derechos {
-    display: flex;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    background: #C30606;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background: #C30606;
 }
 
 /* Contacto */
@@ -687,9 +679,10 @@ textarea {
     max-width: 100%;
   }
 
-  .main_index {
-    height: auto;
-    width: 100%;
+   header {
+    height: unset;
+    margin: 50px;
+    padding: unset;
   }
 
   .logo {
@@ -700,13 +693,14 @@ textarea {
   .contenedor {
     flex-direction: column;
     gap: 5px;
+    gap: unset;
   }
 
   nav {
     flex-direction: column;
-    height: 230px;
     justify-content: flex-start;
     gap: 10px;
+    height: unset;
   }
 
   a {
@@ -723,15 +717,19 @@ textarea {
   }
 
   .nombre {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
+  .img_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+
+  }
   .foto {
-    display: block;
     max-width: 80%;
-    margin-left: -160px;
-    margin-top: -67px;
-    margin-bottom: 50px;
   }
 
   .estrellalila {
@@ -746,10 +744,6 @@ textarea {
     right: 310px;
   }
 
-  footer {
-    width: 100%;
-    margin-top: 60vh;
-  }
 
        .contacto {
         gap: 50px;
