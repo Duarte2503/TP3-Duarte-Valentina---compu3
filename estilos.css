@@ -684,22 +684,17 @@ textarea {
 
 @media screen and (max-width: 412px) {
 
-    html, body {
+    /*index*/
+
+  html, body {
     overflow-x: hidden;
     max-width: 100%;
-    max-height: fit-content;
   }
 
-    .main_index {
+  .main_index {
     height: auto;
     width: 100%;
   }
-
-   body {
-    max-height: fit-content;
-   }
-
-
 
   .logo {
     width: 68px;
@@ -708,7 +703,7 @@ textarea {
 
   .contenedor {
     flex-direction: column;
-    gap: 5px; 
+    gap: 5px;
   }
 
   nav {
@@ -722,8 +717,6 @@ textarea {
     font-size: 16px;
   }
 
-
-
   h1 {
     font-size: 50px;
     font-weight: 300;
@@ -733,65 +726,44 @@ textarea {
     font-size: 100px;
   }
 
-  .cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-
   .nombre {
-     margin-top: 80px;
-  }  
+    margin-top: 80px;
+  }
 
   .foto {
-     display: block;
-     max-width: 80%;
-     margin: 0 auto 50px 60p;
-     margin-left: -160px;
-     margin-top: -67px;
-    } 
+    display: block;
+    max-width: 80%;
+    margin-left: -160px;
+    margin-top: -67px;
+    margin-bottom: 50px;
+  }
 
-        .estrellalila {
-        height: 54px;
-        left: 1px;
-        margin-top: 30px;
-    }
+  .estrellalila {
+    height: 54px;
+    left: 1px;
+    margin-top: 30px;
+  }
 
-
-
-      .estrellaroja {
-        height: 40px;
-        top: 170px;
-        right: 310px;
-    }
+  .estrellaroja {
+    height: 40px;
+    top: 170px;
+    right: 310px;
+  }
 
   footer {
     width: 100%;
-    margin-top: 48vh;
+    margin-top: 2rem;
   }
 
-   .contacto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-    padding: 10px;
-    height: auto;
-    width: 100%;
-  }
-
-  .item {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
-  }
+       .contacto {
+        gap: 50px;
+        padding: 10px;
+        height: auto;
+    }
 
   .item img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .item p {
@@ -807,7 +779,41 @@ textarea {
     font-size: 13px;
     text-align: center;
   }
+
+  /*sobre mi*/
+
+  .seccion-sobremi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 180px 0;
+  }
+
+  .foto_sobremi {
+    width: 70%;
+    height: auto;
+  }
+
+  .texto-sobremi h2 {
+    font-size: 80px;
+    margin: 30px 0 10px 0;
+  }
+
+  .texto-sobremi p {
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .decoracion-estrellas {
+    display: none; 
+  }
+
+
 }
+
+
+
 
     
 
