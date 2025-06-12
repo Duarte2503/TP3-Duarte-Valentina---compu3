@@ -233,6 +233,16 @@ textarea {
     background-color: #CC0000;
     justify-content: center;
     width: 18%;
+    transition: color 0.3s ease;
+}
+
+.submit:hover {
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    width: 18%;
+    transition: color 0.3s ease;
 }
 
 .titulo_form {
@@ -265,6 +275,13 @@ textarea {
     border-radius: 50px;
     padding: 25px 30px;
     margin-bottom: 30px;
+}
+
+.caja h1 {
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 700;
+
 }
 
 .titulos {
@@ -331,26 +348,32 @@ textarea {
     height: 669px;
 }
 
-.estrella_3 {
+.decoracion-estrellas {
+    position: relative;
+}
+
+.estrella_2 {
+    height: 54px;
     position: absolute;
-    top: 830px;
+    left: 570px;
+    bottom: 500px;
+    animation: rotar 10s linear infinite;
 }
 
 .estrella_4 {
     transform: rotate(11.784deg);
     position: absolute;
-    left: 230px;
-    top: 140px;
-}   
+    top: px;
+    right: 440px;
+    bottom: 500px;
+} 
 
-.estrella_2 {
-    height: 54px;
+.estrella_3 {
     position: absolute;
-    right: 337px;
-    top: 300px;
-    animation: rotar 10s linear infinite;
+    bottom: -20px;
+    left: -70px;
+    transform: rotate(19.784deg);
 }
-
 
 .texto-sobremi h2 {
     font-size: 205px;
@@ -375,8 +398,8 @@ textarea {
 .estrella_trab {
     animation: rotar 10s linear infinite;
     position: absolute;
-    LEFT: 260PX;
-    top: 320Px;
+    top: -150px;
+    right: 650px;
     height: 60PX;
 }
 
@@ -384,14 +407,13 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
 }
 
 .trabajos h1 {
     color: #FFF;
     font-size: 110px;
     font-weight: 700;
-    margin-top: 135px;
+    margin-top: 100px;
     margin-right: 470px;
 }
 
@@ -402,7 +424,6 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 40px;
     background: #FFF;
 }
@@ -448,25 +469,32 @@ textarea {
     column-gap: 40px;
     row-gap: 40px;
     margin-bottom: 100px;
+    margin-top: 60px;
 }
 
 
 
 /*teatro cervantes*/
+.main_teatro_cervantes{
+    background: #000;
+}
+
 .teatro_cervantes {
     display: flex;
     width: 1439.617px;
     gap: 16px 4px;
     margin: auto;
-    margin-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .texto_tc h1 {
     font-size: 110px;
     font-weight: 700;
     max-width: 1400px;
-    margin-bottom: 50px;
     margin: auto;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .afiches_tc {
@@ -492,16 +520,17 @@ textarea {
 }
 
 .descripcion_tc p {
-    color: #000;
+    color: white;
     font-family: Roboto;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .descripcion_tc h3 {
     font-family: "Sofia Sans Extra Condensed";
     font-size: 32px;
     margin-top: 70px;
+    color: white;
 }
 
 /*landscape*/
@@ -607,6 +636,50 @@ textarea {
 }
 
 
+/*pinturas*/
+
+.botón_volver {
+    position: relative;
+}
+
+.botón_volver img {
+    padding-left: 80px;
+    margin-top: 100px;
+    height: 80px;
+    position: fixed;
+}
+
+.texto_pinturas h1 {
+    color: #000;
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 355px;
+}
+
+.texto_pinturas h2 { 
+    color: #000; 
+    font-family: "Sofia Sans Extra Condensed";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 355px;
+}
+
+.img_pinturas {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    max-width: 100vh;
+    margin-left: 355px;
+}
+
 
 
 @media screen and (max-width: 412px) {
@@ -652,47 +725,49 @@ textarea {
 
 
   h1 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 300;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 100px;
   }
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
   .nombre {
      margin-top: 80px;
   }  
 
-   .foto {
-  width: 80%;
-  max-width: 300px;
-  display: block;
-  margin: 30px auto 20px auto;
-  position: static;
- }
+  .foto {
+     display: block;
+     max-width: 80%;
+     margin: 0 auto 50px 60p;
+     margin-left: -160px;
+     margin-top: -67px;
+    } 
+
+        .estrellalila {
+        height: 54px;
+        left: 1px;
+        margin-top: 30px;
+    }
 
 
 
-  .estrellalila {
-  position: absolute;
-  width: 35px;
-  height: 34px;
-  left: 1px;
-  top: 20px;
-  }
-
-  .estrellaroja {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 100px;
-  right: 200px;
-  animation: rotar 10s linear infinite;
-  }
+      .estrellaroja {
+        height: 40px;
+        top: 170px;
+        right: 310px;
+    }
 
   footer {
     width: 100%;
+    margin-top: 48vh;
   }
 
    .contacto {
