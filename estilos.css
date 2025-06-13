@@ -384,7 +384,7 @@ textarea {
     margin-left: 40px;
 }
 
-/*-------------------------------------------------------------------------------------------trabajos----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------trabajos--------------------------------------------------------------*/
 .main_trabajo {
     background-color: #000;
 }
@@ -673,9 +673,6 @@ textarea {
 }
 
 
-.menu-toggle {
-  display: none;
-}
 
 
 @media screen and (max-width: 412px) {
@@ -705,28 +702,11 @@ textarea {
     position: relative;
   }
 
-  .menu-toggle {
-    display: block;
-    font-size: 40px;
-    color: black; 
-    background: none;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-  }
-
-    nav {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        background-color: white;
-        width: 100%;
-        margin-left: 150px;
-        gap: 30px;
-    }
-
-  nav.active {
-    display: flex !important; 
+  nav {
+    flex-direction: column;
+    height: 230px;
+    justify-content: flex-start;
+    gap: 10px;
   }
 
   a {
@@ -825,8 +805,182 @@ textarea {
     display: none; 
   }
 
+  /*-----------------------------------------trabajos-------------------------------------------------------*/
+
+   .trabajos h1 {
+    font-size: 80px;
+    margin-top: 50px;
+    margin-left: 480px;
+    }
+
+   .cont_trabajo {
+    width: 330px;
+    height: 330px;
+    }
+    .galeria_trabajos {
+    display: flex;
+    flex-direction: column;
+    }   
+
+    /*teatro cervantes*/
+
+        .teatro_cervantes {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .teatro_cervantes > section {
+    max-width: 26%;
+    }
+
+    .columna_3tc img {
+        width: 90%;
+    }
+
+    .folleto img {
+        height: 230px;
+    }
+
+    .afiches_tc {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+
+    .afiches_tc img {
+        width: 90%;
+    }
+
+    .descripcion_tc p {
+    max-width: 90%;
+   }
+
+   .texto_tc h1 {
+    font-size: 90px;
+    padding-top: 50px; 
+    margin-left: 30px;
+    }
+
+    .botón_volver img {
+        display: none; 
+
+    }
+
+
+    /*landscape*/
+
+    .landscape_1 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 85px;
+    }
+
+    .landscape_2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 85px;
+    width: 50px;
+    }
+
+    .landscape_2 img {
+        max-width: 250px;
+    }
+
+    .landscape_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 85px;
+    margin-bottom: 0;
+    width: 250px;
+    }
+
+    .landscape_4 {
+    display: none;
+    }
+
+    /*pinturas*/ 
+
+        .img_pinturas {
+        display: flex;
+        margin-left: 30px;
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .texto_pinturas h1 {
+    color: #000;
+    font-size: 90px;
+    margin-left: 35px;
+   }
+   .texto_pinturas h2 {
+    margin-left: 35px;
+    }
+
+    /*otros tp*/
+
+    .cont_otrostp {
+    display: flex;
+    gap: 40px;  
+    flex-direction: column;
+    align-items: center;
+    }
+
+ /*-------------------------------------------contacto-----------------------------------------------------*/
+
+   .items-formulario {
+    display: unset;
+    column-gap: 50px;
+    }
+
+    .contenedor_formulario {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .formulario {
+        max-width: 350px;
+    }
+
+    form {
+    flex-direction: column;
+    padding: 50px 50px 50px 50px;
+    }
+
+
+    /*curriculum*/
+
+    .main_cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+
+    .derecha {
+    width: 85%; 
+    margin-top: -30px;
+     }
+
+     .izquierda {
+    width: 85%;
+    }     
+    
+    
+
+
+   
+    
+
+
 
 }
+
+
 
 
 
