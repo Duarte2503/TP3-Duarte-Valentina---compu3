@@ -158,18 +158,18 @@ p {
 /* -------------------------------------------------------------------------------Contacto------------------------------------------------------------ */
 
 .contenedor_formulario {
-    display: flex;
-    column-gap: 60px;
-    padding: 50px 100px;
-    max-width: 1200px;
-    margin: auto;
+   display: flex;
+   column-gap: 60px;
+   padding: 50px 100px;
+   max-width: 1200px;
+   margin: auto;
 }
 
 
 .zona-formulario {
-    background-color: #F5ECE3;
-    padding: 25px 50px 50px 50px;
-    z-index: 30;
+   background-color: #F5ECE3;
+   padding: 25px 50px 50px 50px;
+   z-index: 30;
 }
 
 .items-formulario {
@@ -661,7 +661,7 @@ textarea {
     margin-left: 355px;
 }
 
-.img_pinturas {
+.img_grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
     column-gap: 40px;
